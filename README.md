@@ -1,4 +1,11 @@
 # HW-3
+
+-The same method works for different codes because when the method is called, the <T> is replaced with the actual type. 
+ArrayList<String> -> T becomes String
+ArrayList<Double> -> T becomes Double
+ArrayList<Integer> -? T becomes Integer
+The compiler automatically adjusts the method for each data type.
+
 Discussion Questions:
 
 -  The method doesn't need to know the exact type because of the generic placeholder <T>. The place holder <T> eliminates the need for casting and reduces the runtime errors and potentially improve performance. The <T> placeholder is consistent and allows any type like String, Integer and Double to work.
