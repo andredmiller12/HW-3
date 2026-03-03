@@ -1,0 +1,37 @@
+//Cailean Huang, CISC 3130, Group 5
+import java.util.*;
+
+public class Main{
+    public static <T> void processList(ArrayList<T> list){
+        Iterator<T> it = list.iterator();
+
+        while (it.hasNext()){   
+            System.out.println(it.next()); 
+        }
+    }
+
+    public static void main(String[] args){
+
+        ArrayList<String> al1 = new ArrayList<>();
+
+        al1.add("Jack");
+        al1.add("Jill");
+        al1.add("Joe");
+
+        ArrayList<Integer> al2 = new ArrayList<>();
+
+        al2.add(1);
+        al2.add(2);
+        al2.add(3);
+
+        ArrayList<Double> al3 = new ArrayList<>();
+
+        al3.add(1.1);
+        al3.add(1.2);
+        al3.add(1.3);
+
+        processList(al1); 
+        processList(al2);
+        processList(al3);
+    }
+}
